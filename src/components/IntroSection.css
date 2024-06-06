@@ -1,0 +1,54 @@
+/* src/components/IntroSection.css */
+.intro-container {
+    text-align: center;
+    padding: 50px;
+  }
+
+  @media screen { 
+    @media (min-width: 768px) {
+     .intro-container {
+        padding: 100px 0;
+      }
+    }
+    @media (min-width: 1024px) {
+     .intro-container {
+        padding: 150px 0;
+      }
+    }
+    
+  }
+  
+  #intro {
+    background-image: url("../assets/images/image6.jpeg");
+  }
+  .cover-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .intro-container  h1 {
+    font-size: 3.4rem;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .intro-container p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e8d313;
+    color: rgb(81, 68, 68);
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #2fa5dc;
+  }
+  
