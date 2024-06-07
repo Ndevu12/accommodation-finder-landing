@@ -27,6 +27,9 @@ jobs:
         with:
           node-version: '16' # Ensure Node.js version 16 is used
 
+      - name: Clean up previous build
+        run: rm -rf build
+
       - name: Install dependencies
         run: yarn install
 
@@ -47,6 +50,9 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
+
+      - name: Clean up previous deployment
+        run: rm -rf *
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
